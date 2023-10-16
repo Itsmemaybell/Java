@@ -1,0 +1,22 @@
+import java.io.*;                                                       
+public class Main                                          
+{                                                                       
+    private static BufferedReader num = new BufferedReader(new InputStreamReader(System.in));      
+    public static void main(String []args)throws IOException            
+    {                                                                   
+        System.out.print("Enter a First Number: ");                     
+        int fnum = Integer.parseInt(num.readLine());                      
+        
+        System.out.print("Enter a Second Number: ");                    
+        int snum = Integer.parseInt(num.readLine());                      
+        double sum = fnum + snum;                                           
+        double diff = fnum - snum;                                           
+        double prod = fnum * snum;                                           
+        double quot = fnum / snum;
+            
+       System.out.println("The sum is: " + sum);                                          
+       System.out.println("The difference is: " + diff);                 
+       System.out.println("The product is: " + prod);                     
+       System.out.println("The quotient is: " + quot);                    
+    }                                                                  
+}                                                                    
